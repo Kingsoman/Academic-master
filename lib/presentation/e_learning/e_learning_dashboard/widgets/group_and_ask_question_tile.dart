@@ -46,7 +46,7 @@ class GroupAndAskQuestionTile extends StatelessWidget {
                       },
                       child: ImageBoxTile("girl.jpg", "Ask a Doubt"),
                     ),
-                  )
+                  ),
                 ],
               );
       },
@@ -86,7 +86,7 @@ class ImageBoxTile extends StatelessWidget {
             width: 1.sw / 2.5,
             height: 1.sw > 450 ? 1.sh / 3 : 1.sh / 5,
             fit: BoxFit.fill,
-          )
+          ),
         ],
       ),
     );

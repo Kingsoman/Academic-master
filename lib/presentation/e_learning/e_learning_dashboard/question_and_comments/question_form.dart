@@ -64,7 +64,7 @@ class QuestionFormPage extends StatelessWidget {
           return Stack(
             children: <Widget>[
               const QuestionFormPageScaffold(),
-              SavingInProgressOverlay(isSaving: state.isSaving)
+              SavingInProgressOverlay(isSaving: state.isSaving),
             ],
           );
         },
@@ -87,7 +87,8 @@ class SavingInProgressOverlay extends StatelessWidget {
       ignoring: !isSaving,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 150),
-        color: isSaving ? Colors.black.withOpacity(0.8) : Colors.transparent,
+        color:
+            isSaving ? Colors.black.withValues(alpha: 0.8) : Colors.transparent,
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Visibility(

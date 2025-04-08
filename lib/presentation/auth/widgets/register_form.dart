@@ -710,7 +710,7 @@ class _RegisterFormState extends State<RegisterForm> {
                                           secondYearCircleColor,
                                         ),
                                       ),
-                                    )
+                                    ),
                                   ],
                                 ),
                                 Padding(
@@ -782,10 +782,10 @@ class _RegisterFormState extends State<RegisterForm> {
                                             fourthYearCircleColor,
                                           ),
                                         ),
-                                      )
+                                      ),
                                     ],
                                   ),
-                                )
+                                ),
                               ],
                             )
                           else
@@ -858,7 +858,7 @@ class _RegisterFormState extends State<RegisterForm> {
                                   ),
                                 ),
                               ],
-                            )
+                            ),
                         ],
                       ),
                       isActive: _currentStep >= 0,

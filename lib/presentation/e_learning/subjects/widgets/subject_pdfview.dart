@@ -52,7 +52,7 @@ class SubjectPdfView extends HookWidget {
                     ),
                   ],
                 ),
-              )
+              ),
           ],
         ),
       ),

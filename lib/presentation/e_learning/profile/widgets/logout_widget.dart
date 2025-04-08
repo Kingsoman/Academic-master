@@ -10,7 +10,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget logoutWidget(BuildContext context) {
   return Material(
-    color: Colors.white10.withOpacity(0.6),
+    color: Colors.white10.withValues(alpha: 0.6),
     child: BackdropFilter(
       filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
       child: Container(
@@ -60,7 +60,7 @@ Widget logoutWidget(BuildContext context) {
                         ),
                       ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),

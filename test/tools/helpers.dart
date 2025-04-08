@@ -30,7 +30,7 @@ extension WidgetTesterEx on WidgetTester {
               child: child,
             ),
     );
-    await pumpWidget(testWidget, duration, phase);
+    await pumpWidget(testWidget, duration: duration, phase: phase);
   }
 }
 

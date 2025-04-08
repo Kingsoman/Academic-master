@@ -117,7 +117,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
                       },
                       style: ButtonStyle(
                         alignment: Alignment.center,
-                        backgroundColor: MaterialStateProperty.all<Color>(
+                        backgroundColor: WidgetStateProperty.all<Color>(
                           Apptheme.primaryColor,
                         ),
                       ),

@@ -155,7 +155,7 @@ class FrontWidget extends StatelessWidget {
                     ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

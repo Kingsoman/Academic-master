@@ -89,7 +89,7 @@ class SubjectCard extends StatelessWidget {
                   studyMaterials: studyMaterial,
                 ),
               )
-              .iter
+              .iter,
         ],
       ],
     );

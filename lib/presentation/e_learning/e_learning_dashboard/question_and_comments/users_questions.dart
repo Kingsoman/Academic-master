@@ -116,7 +116,7 @@ class _UsersQuestionsState extends State<UsersQuestions> {
                                             ),
                                       ),
                                     ],
-                                  )
+                                  ),
                                 ],
                               ),
                               const Spacer(),
@@ -129,7 +129,8 @@ class _UsersQuestionsState extends State<UsersQuestions> {
                                   showGeneralDialog(
                                     barrierLabel: "Barrier",
                                     barrierDismissible: true,
-                                    barrierColor: Colors.black.withOpacity(0.5),
+                                    barrierColor:
+                                        Colors.black.withValues(alpha: 0.5),
                                     transitionDuration:
                                         const Duration(milliseconds: 800),
                                     context: context,
@@ -313,7 +314,7 @@ class _UsersQuestionsState extends State<UsersQuestions> {
                                         .copyWith(fontSize: 10.sp),
                                   ),
                                 ],
-                              )
+                              ),
                             ],
                           ),
                           SizedBox(height: 20.h),

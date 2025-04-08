@@ -60,7 +60,7 @@ class DashBoardAppBar extends StatelessWidget {
               size: 40,
             ),
           ),
-        )
+        ),
       ],
     );
   }

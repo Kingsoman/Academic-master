@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 // ignore: must_be_immutable
-class PostCrudPopup extends StatelessWidget {
+class PostCrudPopup extends StatefulWidget {
   Question question;
 
   PostCrudPopup({
@@ -22,6 +22,11 @@ class PostCrudPopup extends StatelessWidget {
     required this.question,
   });
 
+  @override
+  State<PostCrudPopup> createState() => _PostCrudPopupState();
+}
+
+class _PostCrudPopupState extends State<PostCrudPopup> {
   @override
   Widget build(
     BuildContext context,
@@ -50,16 +55,17 @@ class PostCrudPopup extends StatelessWidget {
                       GestureDetector(
                         onTap: () {
                           if (currentLoginUser.users.first.id.getorCrash() ==
-                              question.userId.getorCrash()) {
+                              widget.question.userId.getorCrash()) {
                             context.read<QuestionActorBloc>().add(
-                                  QuestionActorEvent.deleted(question),
+                                  QuestionActorEvent.deleted(widget.question),
                                 );
 
                             AutoRouter.of(context).pop().then((value) {
                               showGeneralDialog(
                                 barrierLabel: "Barrier",
                                 barrierDismissible: true,
-                                barrierColor: Colors.black.withOpacity(0.5),
+                                barrierColor:
+                                    Colors.black.withValues(alpha: 0.5),
                                 transitionDuration:
                                     const Duration(milliseconds: 800),
                                 context: context,
@@ -85,7 +91,8 @@ class PostCrudPopup extends StatelessWidget {
                               showGeneralDialog(
                                 barrierLabel: "Barrier",
                                 barrierDismissible: true,
-                                barrierColor: Colors.black.withOpacity(0.5),
+                                barrierColor:
+                                    Colors.black.withValues(alpha: 0.5),
                                 transitionDuration:
                                     const Duration(milliseconds: 800),
                                 context: context,
@@ -136,16 +143,18 @@ class PostCrudPopup extends StatelessWidget {
                       GestureDetector(
                         onTap: () {
                           if (currentLoginUser.users.first.id.getorCrash() ==
-                              question.userId.getorCrash()) {
+                              widget.question.userId.getorCrash()) {
                             AutoRouter.of(context).push(
-                              QuestionFormRoute(editedQuestion: question),
+                              QuestionFormRoute(
+                                  editedQuestion: widget.question),
                             );
                           } else {
                             AutoRouter.of(context).pop().then((value) {
                               showGeneralDialog(
                                 barrierLabel: "Barrier",
                                 barrierDismissible: true,
-                                barrierColor: Colors.black.withOpacity(0.5),
+                                barrierColor:
+                                    Colors.black.withValues(alpha: 0.5),
                                 transitionDuration:
                                     const Duration(milliseconds: 800),
                                 context: context,
@@ -215,7 +224,7 @@ class PostCrudPopup extends StatelessWidget {
                               Icons.link_outlined,
                               color: Apptheme.primaryColor,
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ],

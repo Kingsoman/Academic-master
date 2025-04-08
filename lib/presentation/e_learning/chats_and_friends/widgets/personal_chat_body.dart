@@ -151,7 +151,7 @@ class _PersonalChatBodyState extends State<PersonalChatBody> {
                                                 SizedBox(width: 10.w),
                                                 const Text(
                                                   "DELETE",
-                                                )
+                                                ),
                                               ],
                                             ),
                                           ),
@@ -164,7 +164,7 @@ class _PersonalChatBodyState extends State<PersonalChatBody> {
                                                     barrierLabel: "Barrier",
                                                     barrierDismissible: true,
                                                     barrierColor: Colors.black
-                                                        .withOpacity(0.5),
+                                                        .withValues(alpha: 0.5),
                                                     transitionDuration:
                                                         const Duration(
                                                       milliseconds: 800,

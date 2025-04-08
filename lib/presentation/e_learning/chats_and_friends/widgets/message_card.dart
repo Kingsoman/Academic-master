@@ -103,13 +103,13 @@ class MessageCard extends StatelessWidget {
                                         ),
                                   )
                                 else
-                                  const SizedBox()
+                                  const SizedBox(),
                               ],
-                            )
+                            ),
                           ],
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               );

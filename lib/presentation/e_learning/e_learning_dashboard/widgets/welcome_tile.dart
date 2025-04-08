@@ -100,7 +100,7 @@ class WelcomeTileMessage extends StatelessWidget {
                 : Apptheme(context)
                     .boldText
                     .copyWith(fontSize: ScreenUtil().setHeight(30)),
-          )
+          ),
         ],
       ),
     );

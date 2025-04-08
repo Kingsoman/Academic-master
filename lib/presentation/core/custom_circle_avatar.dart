@@ -32,7 +32,7 @@ class CustomAvartar extends StatelessWidget {
           Text(
             "Anniar",
             style: Apptheme(context).normalText.copyWith(fontSize: 12.sp),
-          )
+          ),
         ],
       ),
     );

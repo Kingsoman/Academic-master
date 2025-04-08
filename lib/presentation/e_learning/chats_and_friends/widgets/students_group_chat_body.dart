@@ -141,7 +141,7 @@ class StudentGroupChatsBody extends StatelessWidget {
                                                   SizedBox(width: 10.w),
                                                   const Text(
                                                     "DELETE",
-                                                  )
+                                                  ),
                                                 ],
                                               ),
                                             ),
@@ -155,7 +155,8 @@ class StudentGroupChatsBody extends StatelessWidget {
                                                       barrierLabel: "Barrier",
                                                       barrierDismissible: true,
                                                       barrierColor: Colors.black
-                                                          .withOpacity(0.5),
+                                                          .withValues(
+                                                              alpha: 0.5),
                                                       transitionDuration:
                                                           const Duration(
                                                         milliseconds: 800,

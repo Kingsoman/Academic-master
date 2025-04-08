@@ -156,8 +156,8 @@ class _ProfileoptionState extends State<Profileoption> {
       'description': '3 Months Plan',
       'prefill': {'contact': widget.mobileNumber, 'email': widget.email},
       'external': {
-        'wallets': ['paytm']
-      }
+        'wallets': ['paytm'],
+      },
     };
 
     try {
